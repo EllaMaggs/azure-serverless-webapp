@@ -3,7 +3,8 @@ window.addEventListener('DOMContentLoaded', () => {
     getVisitCount();
 });
 
-const functionApi = 'http://localhost:7071/api/GetResumeCounter'; // Replace with live API URL when deployed
+const functionApiUrl = 'https://emresumeproject.azurewebsites.net/api/GetResumeCounter?code=jY2weazXxO3ucEYh33_ntl3kix1tdmxcRmMfRXIS9r8TAzFuljJDtw%3D%3D'
+const localhostfunctionApi = 'http://localhost:7071/api/GetResumeCounter'; // Replace with live API URL when deployed
 
 const getVisitCount = async () => {
     const counterElement = document.getElementById("counter");
@@ -19,7 +20,7 @@ const getVisitCount = async () => {
 
     try {
         // Fetch the data from the Azure Function API
-        const response = await fetch(functionApi);
+        const response = await fetch(functionApiUrl);
         console.log("API Response Status:", response.status);
 
         // Check if the response is successful
@@ -44,4 +45,3 @@ const getVisitCount = async () => {
         counterElement.innerText = "Error loading count";
     }
 };
-
