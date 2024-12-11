@@ -1,8 +1,11 @@
-name: Blob storage website CI
+name: deploy-frontend
+#Deploys when push is made from frontend folder
 
 on:
     push:
         branches: [ main ]
+        paths:
+        - 'frontend/**'
 
 jobs:
   build:
@@ -17,12 +20,12 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-            az storage blob upload-batch --account-name <STORAGE_ACCOUNT_NAME> --auth-mode key -d '$web' -s .
+            az storage blob upload-batch --account-name emwebappstorageaccount --auth-mode key -d '$web' -s frontend/
     - name: Purge CDN endpoint
       uses: azure/CLI@v1
       with:
         inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name "CDN_PROFILE_NAME" --name "CDN_ENDPOINT" --resource-group "RESOURCE_GROUP"
+           az cdn endpoint purge --content-paths  "/*" --profile-name "EllaMaggsResume" --name "ellamaggs" --resource-group "EMWebAppProjectv4-rg"
 
   # Azure logout
     - name: logout
