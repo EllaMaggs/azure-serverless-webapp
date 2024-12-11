@@ -20,7 +20,7 @@ namespace Company.Function
         {
             _logger = logger;
             _cosmosClient = cosmosClient;
-
+            // Here is where the counter ges updated
             _logger.LogInformation($"Attempting to get container {ContainerName} from database {DatabaseName}");
 
             try

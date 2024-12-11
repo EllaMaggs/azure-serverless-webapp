@@ -1,0 +1,13 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureResumeConnectionString": "AccountEndpoint=https://emwebappprojectv4.documents.azure.com:443/;AccountKey=AHsWAFT5vV3St27WBZEyPLn52M5ewkpd7E3bcozynLYXSSxbF9pVsQgv9YQHzqr2ewkS6xx1sVRKACDb5xrbzg==;",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "AzureWebJobsStorage": ""
+  },
+  "Host":
+  {
+    "CORS": "*",
+    "LocalHttpPort": 5004
+  }
+}
