@@ -36,7 +36,7 @@ jobs:
       shell: pwsh
       run: |
         pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/api'
-        dotnet build --configuration Release --output ./output
+        dotnet build --configuration Release --output ./bin/output
         popd
     - name: 'Run unit test'
       shell: pwsh
@@ -48,7 +48,7 @@ jobs:
       id: fa
       with:
         app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
-        package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
+        package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/api/bin/output'
 
     - name: 'Set Azure Cosmos DB Connection String'
       shell: pwsh
