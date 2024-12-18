@@ -17,7 +17,8 @@ Please note this tutorial was published in May 2021 and the outdated aspects wil
 - 'github/workflows/': Folder contains CI/CD workflow configurations. 
 
 ## Architecture
-![Architecture Diagram](EMWebAppArchitectureDiagram.png)
+![Architecture Diagram](./EMWebAppArchitectureDiagram.png)
+
 
 ## Deployment (Explain CICD, Github Actions and component stages)
 ## Troubleshooting
