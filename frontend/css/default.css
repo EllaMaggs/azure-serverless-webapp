@@ -802,6 +802,15 @@ properly.
 	text-align: center !important;
 }
 
+/* Target the <p> with class 'info' where these texts appear */
+.info {
+   font-family: 'opensans-regular', sans-serif; /* Set a base font for the info class */
+ }
+ 
+ /* Specifically target the <span> elements inside .info for bold */
+ .info span {
+   font-family: 'opensans-bold', sans-serif;
+ }
 
 
 
