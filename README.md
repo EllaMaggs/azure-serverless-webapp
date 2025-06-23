@@ -1,9 +1,5 @@
-# webappprojectv4
-This is my resume! It's a static website hosted on Azure Storage with a visitor counter powered by .NET and Azure Functions. Developed with HTML, CSS, and JavaScript; it features CI/CD workflows managed via GitHub Actions and integrates Azure services like Blob Storage and CosmosDB for a serverless web app with a dynamic database. 
-
-> If you'd like to create your own, here is the Youtube tutorial I took inspriation from [ACloudGuru:BuildYourResume](https://youtu.be/ieYrBWmkfno?si=iuMKmuw_OTyR2v70)
->
-> Please note this tutorial was published in May 2021 and the outdated aspects will require some troubleshooting. 
+# azure-serverless-webapp
+This is my website! It's a static website hosted on Azure Storage with a visitor counter powered by .NET and Azure Functions. Developed with HTML, CSS, and JavaScript; it features CI/CD workflows managed via GitHub Actions and integrates Azure services like Blob Storage and CosmosDB for a serverless web app with a dynamic database. 
 
 ## Demo
 [View it live here](https://www.ellamaggs.com/)
@@ -26,4 +22,5 @@ Azure Functions is a serverless compute service that uses an event-driven model,
 The CI/CD pipeline is automated through GitHub Actions, enabling a seamless integration and deployment process to continuously deliver updates to the website. This ensures development velocity, minimises downtime, and maintains the reliability and quality of the application with every push. Azure Monitor collects performance metrics about the services deployed in this solution and collects application logs. 
 
 ## Troubleshooting
+
 ## Roadmap
