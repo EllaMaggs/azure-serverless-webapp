@@ -1,4 +1,4 @@
-# azure-serverless-webapp
+# Azure Serverless Static Web App with Visitor Counter and Analytics
 This is my website! It's a static website hosted on Azure Storage with a visitor counter powered by .NET and Azure Functions. Developed with HTML, CSS, and JavaScript; it features CI/CD workflows managed via GitHub Actions and integrates Azure services like Blob Storage and CosmosDB for a serverless web app with a dynamic database. 
 
 ## Demo
@@ -23,4 +23,15 @@ The CI/CD pipeline is automated through GitHub Actions, enabling a seamless inte
 
 ## Troubleshooting
 
+- **Website not loading:** Check Azure Storage static website settings and CDN configuration.
+- **Visitor counter not updating:** Review Azure Functions logs, verify CosmosDB connection, and ensure CORS is set up.
+- **CI/CD pipeline fails:** Inspect GitHub Actions logs and confirm Azure credentials/secrets are correct.
+- **Deployment issues:** Check resource group, region, and Azure service quotas.
+
 ## Roadmap
+
+- **Environment Separation:** Separate development, staging, and production environments with automated deployments.
+- **Rollback Strategies:** Implement blue/green deployments and rollback options for safer releases.
+- **Rate Limiting:** Add rate limiting and throttling to protect API endpoints.
+- **Automated Testing:** Integrate unit, integration, and end-to-end tests for both frontend and backend.
+- **Automated Dependency Updates:** Use Dependabot to keep dependencies up to date.
