@@ -29,8 +29,6 @@ The CI/CD pipeline is automated through GitHub Actions, enabling a seamless inte
 
 ## Roadmap
 
-- **Environment Separation:** Separate development, staging, and production environments with automated deployments.
-- **Rollback Strategies:** Implement blue/green deployments and rollback options for safer releases.
-- **Rate Limiting:** Add rate limiting and throttling to protect API endpoints.
-- **Automated Testing:** Integrate unit, integration, and end-to-end tests for both frontend and backend.
-- **Automated Dependency Updates:** Use Dependabot to keep dependencies up to date.
+- **Improve CI/CD Pipelines** Add end-to-end tests with automated security scanning and performance testing.
+- **Rate Limiting:** Add API authentication, rate limiting, and replace wildcard CORS with specific domains.
+- **Automated Testing:** Configure Azure Monitor alerts for error rates, response times, function failures, and cost thresholds.
